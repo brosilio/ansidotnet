@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AnsiDotNet/AnsiDotNet.csproj" />
+    <Project Path="src/AnsiDotNet.Layout/AnsiDotNet.Layout.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AnsiDotNet.Tests/AnsiDotNet.Tests.csproj" />
+  </Folder>
+</Solution>

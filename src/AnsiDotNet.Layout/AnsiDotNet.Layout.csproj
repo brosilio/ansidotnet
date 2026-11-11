@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
+    <RootNamespace>AnsiDotNet.Layout</RootNamespace>
+    <IsAotCompatible>true</IsAotCompatible>
+    <IsTrimmable>true</IsTrimmable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+
+    <PackageId>AnsiDotNet.Layout</PackageId>
+    <Version>0.1.0</Version>
+    <PackageLicenseExpression>0BSD</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Description>Cell-grid layout, text layout and animation for AnsiDotNet: constraint solving, dock/stack/layer containers, wrapping, and slide/fade/expand transitions.</Description>
+    <PackageTags>ansi;terminal;tui;layout;animation;bbs</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../AnsiDotNet/AnsiDotNet.csproj" />
+    <InternalsVisibleTo Include="AnsiDotNet.Tests" />
+    <None Include="README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>
